@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Veterinarios</title>
+	<!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" >
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=ABeeZee|Amaranth|Andika|Chathura|Convergence|Didact+Gothic|Imprima|Inder|Josefin+Sans|Muli|Poppins|Questrial|Quicksand|Reem+Kufi|Ruluko|Secular+One|Tenali+Ramakrishna|Viga');
+        .heading{
+            font-size:70px;
+            position:relative;
+            left:40px;
+            top:30px;
+        }
+        .subheading{
+           font-size:30px;
+            position:relative;
+            left:250px;
+            top:20px;
+        }
+
+        .faded{
+            color:grey;
+            font-size:0.7em;
+        }
+        body, html{
+            margin:0;
+            padding:0;
+        }
+		.header{
+            padding:1px; /*fixes margincolapse*/
+            height:430px;
+            font-family: 'Viga', 'Questrial', sans-serif;
+			background-image:url("imgs/doggo.jpg");
+            background-size: 1300px 860px;
+            background-size: 100% 860px;
+            background-attachment: fixed;
+		}
+         @media screen and (min-width: 1440px) {
+          .header{
+             background-size: 100% 1290px;
+            }
+        }
+        
+        @media screen and (max-width: 1024px) {
+          .header{
+             background-size: 100% 430px;
+            }
+        }
+        
+        .logo{
+            width:300px;
+            border:3px solid #6060de;
+            border-radius: 10px;
+            text-align: center;
+            padding:10px;
+            color:#6060de;
+            font-size:30px;
+            margin-top:30px;
+            margin-left:10px;
+        }
+        nav{
+            position:fixed;
+            top:10px;
+            right:0;
+            color:white;
+            font-size:25px;
+            z-index:9999999;
+        }
+        li{
+            display: inline;
+            list-style: none;
+            padding: 5px 30px;
+            margin: 1em;
+            color: #6060de;
+            background-color: rgba(255,255,255,0.8);
+            border-radius: 10px;
+            border: 4px solid;
+        }
+        .panel, .pic_panel{
+            min-height:400px;
+            width:100%;
+            background-color:#6060de;
+            background-image: url(imgs/crissxcross.png);
+            background-size: 25%;
+            border: 2px black solid; 
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .pic_panel{
+            background-color:#55b26e;
+        }
+        .pic_panel>.container{
+             display:flex;
+            justify-content:flex-end;
+            align-items:center;
+            position:relative;
+        }
+        .words{
+            color:white;
+            font-size:20px;
+            text-align: center;
+            width:50%;   
+            display:inline-block;
+        }
+        .container{
+            padding: 0;
+            height:400px;
+            display:flex;
+            justify-content:flex-end;
+            align-items:center;
+            position:relative;
+        }
+        .pic_panel>.container>.words{
+            color:white;
+            font-size:20px;
+            text-align: center;
+            width:50%;  
+        }
+        .panel_1_pic{
+            background-image: url(imgs/vet.png); 
+            background-size: 300px;
+            width: 61%;
+            height: 300px;
+            background-repeat: no-repeat;
+            display: inline-block;
+        }
+         .panel_2_pic{
+           background-image: url(imgs/calendar.png); 
+            background-size: 300px;
+            width: 61%;
+            height: 300px;
+            background-repeat: no-repeat;
+            display: inline-block;
+        }
+        .panel_3_pic{
+    background-image: url(imgs/iphone.png);
+        background-size: 350px;
+        width: 70%;
+        height: 500px;
+        background-repeat: no-repeat;
+        display: inline-block;
+} 
+
+	</style>
+</head>
+<body>
+	<div class="header">
+	
+	<div class="logo">Veterinarios</div>
+	
+	<nav><ul><li>Opciones</li><li>Descarga</li><li>Docs</li></ul></nav>
+	
+	</div>
+	
+	<div class="content">
+    <div class="row">
+         <div class="panel">
+	        <div class="container">
+	            <div class="words" data-lorem="5s"></div><div class="words"><div class="panel_1_pic"></div></div>
+	        </div>
+	    </div>
+    </div>
+    <div class="row">
+        <div class="pic_panel">
+        <div class="container">
+            <div class="words"><div class="panel_2_pic"></div></div><div class="words" data-lorem="5s"></div>
+	        </div>
+	         </div>
+        
+    </div>
+    <div class="row">
+        <div class="panel">
+            <div class="container">
+	            <div class="words" data-lorem="5s"></div><div class="words"><div class="panel_3_pic"></div></div>
+	        </div>
+        </div>
+    </div>
+     <div class="row">
+        <div class="pic_panel">
+           <div>
+            <h1>Descarga ahora la aplicacion para Android y iOS!</h1>
+           
+            <span class="h3"> <svg class="text-danger" id="i-download" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <path d="M9 22 C0 23 1 12 9 13 6 2 23 2 22 10 32 7 32 23 23 22 M11 26 L16 30 21 26 M16 16 L16 30" />
+            </svg> Descarga IOS - <svg class="text-danger" id="i-download" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M9 22 C0 23 1 12 9 13 6 2 23 2 22 10 32 7 32 23 23 22 M11 26 L16 30 21 26 M16 16 L16 30" /></svg> Descarga Android</span>
+            
+
+            </div>
+        </div>
+    </div>
+	</div>
+	<script src="js/lorem.js"></script>
+</body>
+</html>
